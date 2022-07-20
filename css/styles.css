@@ -15,12 +15,12 @@ body{
       margin: auto;
    }
 
-   @media screen and (min-width: 577px) and (max-width: 992px){
+   @media screen and (min-width: 768px) and (max-width: 992px){
       .container{
          padding: 0 15px;   
       }
    }
-   @media screen and (max-width: 576px){
+   @media screen and (max-width: 767px){
       .container{
          padding: 0 10px;   
       }
@@ -39,6 +39,7 @@ body{
       background: #161616;
       border-radius: 30px;
       display: flex;
+      overflow: hidden;
    }
 
    .banner .text{
@@ -70,6 +71,29 @@ body{
 
    .banner img{
       width: 100%;
+      animation: move 1.5s infinite linear;
+   }
+
+   @keyframes move {
+      0% {
+         transform: scale(0.9);
+      }
+
+      25% {
+         transform: scale(1);
+      }
+
+      50% {
+         transform: scale(1.1);
+      }
+
+      75% {
+         transform: scale(1);
+      }
+
+      100% {
+         transform: scale(0.9);
+      }
    }
 
    .banner .banner-button{
@@ -81,7 +105,7 @@ body{
       text-decoration: none;
    }
 
-   @media screen and (min-width: 577px) and (max-width: 992px){
+   @media screen and (min-width: 768px) and (max-width: 992px){
       .container{
          padding-top: 30px;
       }
@@ -104,7 +128,12 @@ body{
       }
    }
 
-   @media screen and (max-width: 576px){
+   @media screen and (max-width: 767px){
+      .banner{
+         margin-top: 30px;
+         margin-right: 15px;
+         margin-left: 15px;
+      }
       .container{
          flex-direction: column;
          width: 100%;
@@ -123,6 +152,7 @@ body{
 
       .banner .banner-heading{
          font-size: 22px;
+         line-height: 35px;
       }
 
       .banner .banne-paragraph{
@@ -170,6 +200,13 @@ body{
       text-align: center;
       padding: 15px 0;
       border-radius: 10px;
+      transition: 0.2s
+   }
+
+   .blog .menu-button:hover{
+      background: #DD0000;
+      color: #fff;
+
    }
 
    .blog .active{
@@ -208,6 +245,11 @@ body{
       padding: 5px 10px;
    }
 
+   .content .details .trasfer-button:hover{
+      color: #fff;
+      background: #DD0000;
+   }
+
    .content .details .title{
       font-weight: 600;
       font-size: 18px;
@@ -233,7 +275,7 @@ body{
       display: none;
    }
 
-   @media screen and (min-width: 577px) and (max-width: 992px) {
+   @media screen and (min-width: 768px) and (max-width: 992px) {
       .blog{
          margin-top: 0px;
       }
@@ -278,7 +320,7 @@ body{
    }
 
 
-   @media screen and (max-width: 576px) {
+   @media screen and (max-width: 767px) {
       .blog .menu{
          margin-right: 0px;
       }
@@ -348,6 +390,7 @@ body{
    }
 
    .Upcoming-Match .content{
+      width: calc(100% - 312px);
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 15px;
@@ -375,7 +418,7 @@ body{
       font-size: 16px;
    }
 
-   @media screen and (min-width: 577px) and (max-width: 992px){
+   @media screen and (min-width: 768px) and (max-width: 992px){
       .Upcoming-Match{
          margin-top: 0px;
       }
@@ -405,7 +448,10 @@ body{
       }
    }
 
-   @media screen and (max-width: 576px){
+   @media screen and (max-width: 767px){
+      .Upcoming-Match .content{
+         width: 100%;
+      }
       .Upcoming-Match{
          margin-top: 0px;
       }
@@ -465,7 +511,7 @@ body{
    }
 
    /* footer responsive css */
-   @media screen and (max-width: 576px) {
+   @media screen and (max-width: 767px) {
       .footer .foot-nav{
          flex-direction: column;
          justify-content: center;
