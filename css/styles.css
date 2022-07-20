@@ -374,6 +374,61 @@ body{
       font-weight: 400;
       font-size: 16px;
    }
+
+   @media screen and (min-width: 577px) and (max-width: 992px){
+      .Upcoming-Match{
+         margin-top: 0px;
+      }
+      .Upcoming-Match .container{
+         flex-direction: column;
+      }
+      .Upcoming-Match .content{
+         width: 100%;
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .Upcoming-Match .menu{
+         margin-right: 0px;
+      }
+
+      .Upcoming-Match .links{
+         background: transparent;
+         flex-direction: row;
+         justify-content: space-between;
+         padding: 30px;
+      }
+
+      .Upcoming-Match .menu-button{
+         border: 1px solid #eeeeee;
+         width: 32%;
+         margin: 15px;
+      }
+   }
+
+   @media screen and (max-width: 576px){
+      .Upcoming-Match{
+         margin-top: 0px;
+      }
+      .Upcoming-Match .menu{
+         margin-right: 0px;
+      }
+
+      .Upcoming-Match .links{
+         flex-direction: column;
+         width: 100%;
+         background: rgba(0, 0, 0, 0);
+      }
+
+      .Upcoming-Match .menu-button{
+         border: 1px solid #eeeeee;
+         width: auto;
+         margin: 15px;
+      }
+      .Upcoming-Match .content{
+         width: 100%;
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
 /* css ends for Upcoming-Match */
 
 
