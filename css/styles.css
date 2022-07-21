@@ -105,6 +105,13 @@ body{
       text-decoration: none;
    }
 
+   .banner .banner-button:hover{
+      background: #fc1b1b;
+   }
+   .banner .banner-button:hover i{
+      transform: translateX(3px);
+   }
+
    @media screen and (min-width: 768px) and (max-width: 992px){
       .container{
          padding-top: 30px;
@@ -151,12 +158,19 @@ body{
       }
 
       .banner .banner-heading{
-         font-size: 22px;
+         font-size: 25px;
          line-height: 35px;
+         margin-bottom: 20px;
       }
 
       .banner .banne-paragraph{
          font-size: 14px;
+      }
+
+      .banner .banne-paragraph{
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
       }
    }
 /* css ends for banner */
@@ -182,7 +196,7 @@ body{
 
 
    .blog .links{
-      background: #161616;
+      background: #618631;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
@@ -321,6 +335,9 @@ body{
 
 
    @media screen and (max-width: 767px) {
+      .blog{
+         margin-top: 0px;
+      }
       .blog .menu{
          margin-right: 0px;
       }
@@ -510,6 +527,34 @@ body{
       color: #c02b2b;
    }
 
+   .footer .social-icon{
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+   }
+
+   .footer .social-icon a{
+      text-decoration: none;
+   }
+   
+   .footer .social-icon i{
+      font-size: 28px;
+      color: #c02b2b;
+      background: #fff;
+      padding: 10px;
+      margin-inline: 10px;
+      border-radius: 10px;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+   }
+
+   .footer .social-icon i:hover{
+      color: #068d24;
+   }
    /* footer responsive css */
    @media screen and (max-width: 767px) {
       .footer .foot-nav{
@@ -522,4 +567,5 @@ body{
          margin-bottom: 10px;
       }
    }
-/* css ends for footer */
+/* css ends for footer 
+   ********************/
